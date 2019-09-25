@@ -1,11 +1,11 @@
 import * as path from 'path';
-import * as semver from 'semver';
+//import * as semver from 'semver';
 import * as tl from 'azure-pipelines-task-lib/task';
 import { Guid } from 'guid-typescript';
 import Endpoint, { EndpointType } from './sonarqube/Endpoint';
 import Scanner, { ScannerMode } from './sonarqube/Scanner';
 import { toCleanJSON } from './helpers/utils';
-import { getServerVersion } from './helpers/request';
+//import { getServerVersion } from './helpers/request';
 import * as azdoApiUtils from './helpers/azdo-api-utils';
 import { REPORT_TASK_NAME, SONAR_TEMP_DIRECTORY_NAME } from './sonarqube/TaskReport';
 
@@ -62,8 +62,7 @@ async function branchFeatureSupported(endpoint) {
   if (endpoint.type === EndpointType.SonarCloud) {
     return true;
   }
-  const serverVersion = await getServerVersion(endpoint);
-  return serverVersion >= semver.parse('7.2.0');
+  return false;
 }
 
 export async function populateBranchAndPrProps(props: { [key: string]: string }) {

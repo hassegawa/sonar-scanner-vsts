@@ -1,13 +1,13 @@
 {
   "manifestVersion": 1,
-  "id": "sonarqube",
+  "id": "community-sonarsource",
   "name": "SonarQube",
-  "version": "4.8.0",
+  "version": "4.8.0.1",
   "branding": {
     "color": "rgb(67, 157, 210)",
     "theme": "dark"
   },
-  "publisher": "sonarsource",
+  "publisher": "community-sonarsource",
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services.Cloud"
