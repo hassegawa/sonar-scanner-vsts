@@ -1,5 +1,5 @@
 {
-  "id": "291ed61f-1ee4-45d3-b1b0-bf822d9095ef",
+  "id": "2bf619ea-da15-4069-ba2d-7bab80e99ed3",
   "name": "SonarQubePublish",
   "friendlyName": "Publish Quality Gate Result",
   "description":
@@ -8,7 +8,7 @@
     "[More Information](http://redirect.sonarsource.com/doc/install-configure-scanner-tfs-ts.html)",
   "category": "Build",
   "visibility": ["Build"],
-  "author": "sonarsource",
+  "author": "community-sonarsource",
   "version": {
     "Major": 4,
     "Minor": 8,
